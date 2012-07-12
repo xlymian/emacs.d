@@ -1,4 +1,5 @@
-;; DESCRIPTION: paulm settings (from old version)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; DESCRIPTION: settings from old version
 
 ;; https://github.com/topfunky/emacs-starter-kit/blob/master/book.local.el
 
@@ -22,9 +23,20 @@
 ;; (textmate-mode)
 
 ;; (whitespace-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (global-set-key [f5] 'cua-mode)
 
+;; OCD compliancy
 (require 'show-wspace)
-(show-ws-toggle-show-trailing-whitespace) ;; OCD mode
+(show-ws-toggle-show-trailing-whitespace)
 
+;; Default theme
+(load-theme 'wheatgrass)
+
+;; Default frame font
+(set-frame-font "AnonymousPro-18")
+
+;; Fullscreen mode on Cocoa
+(if (fboundp 'ns-toggle-fullscreen)
+    (global-set-key [(meta return)] 'ns-toggle-fullscreen))
