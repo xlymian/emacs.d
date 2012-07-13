@@ -28,8 +28,12 @@
 (global-set-key [f5] 'cua-mode)
 
 ;; OCD compliancy
+(add-to-list 'load-path "~/.emacs.d/vendor/")
 (require 'show-wspace)
 (show-ws-toggle-show-trailing-whitespace)
+
+(require 'textmate)
+(textmate-mode)
 
 ;; Default theme
 (load-theme 'wheatgrass)
