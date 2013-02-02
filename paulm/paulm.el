@@ -39,8 +39,41 @@
 (load-theme 'wheatgrass)
 
 ;; Default frame font
-(set-frame-font "AnonymousPro-18")
+(set-frame-font "AnonymousPro-16")
 
 ;; Fullscreen mode on Cocoa
 (if (fboundp 'ns-toggle-fullscreen)
     (global-set-key [(meta return)] 'ns-toggle-fullscreen))
+
+(defun i-wanna-be-social ()
+  "Connect to IM networks using bitlbee."
+  (interactive)
+  (erc :server "planck.58966267.members.btmm.icloud.com" :port 6667 :nick "xlymian"))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Multi-term: see
+;; http://emacs-fu.blogspot.ca/2010/06/console-apps-in-emacs-with-multi-term.html
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'multi-term)
+
+(autoload 'multi-term "multi-term" nil t)
+(autoload 'multi-term-next "multi-term" nil t)
+
+(setq multi-term-program "/bin/bash")   ;; use bash
+;; (setq multi-term-program "/bin/zsh") ;; or use zsh...
+
+;; only needed if you use autopair
+(add-hook 'term-mode-hook
+  #'(lambda () (setq autopair-dont-activate t)))
+
+
+(global-set-key (kbd "C-c t") 'multi-term-next)
+(global-set-key (kbd "C-c T") 'multi-term) ;; create a new one
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; Thanks to http://whattheemacsd.com/mac.el-01.html
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'super)
+(setq ns-function-modifier 'hyper)
