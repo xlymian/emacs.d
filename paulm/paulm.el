@@ -56,6 +56,7 @@
 ;; http://emacs-fu.blogspot.ca/2010/06/console-apps-in-emacs-with-multi-term.html
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'multi-term)
+(require 'magit)
 
 (autoload 'multi-term "multi-term" nil t)
 (autoload 'multi-term-next "multi-term" nil t)
@@ -74,6 +75,7 @@
 
 
 ;; Thanks to http://whattheemacsd.com/mac.el-01.html
-(setq mac-command-modifier 'meta)
-(setq mac-option-modifier 'super)
-(setq ns-function-modifier 'hyper)
+;(setq mac-command-modifier 'meta)
+;(setq mac-option-modifier 'super)
+;(setq ns-function-modifier 'hyper)
+
