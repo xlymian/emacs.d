@@ -39,7 +39,7 @@
 (load-theme 'wheatgrass)
 
 ;; Default frame font
-(set-frame-font "AnonymousPro-16")
+(set-frame-font "AnonymousPro-14")
 
 ;; Fullscreen mode on Cocoa
 (if (fboundp 'ns-toggle-fullscreen)
@@ -79,3 +79,9 @@
 ;(setq mac-option-modifier 'super)
 ;(setq ns-function-modifier 'hyper)
 
+(setq-default fill-column 100)
+
+(turn-off-auto-fill)
+
+;; enable sRGB
+ (setq ns-use-srgb-colorspace t)
