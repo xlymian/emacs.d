@@ -84,4 +84,4 @@
 (turn-off-auto-fill)
 
 ;; enable sRGB
- (setq ns-use-srgb-colorspace t)
+(setq ns-use-srgb-colorspace t)

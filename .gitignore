@@ -3,3 +3,5 @@ elpa/*
 places
 eshell/*
 url/*
+ido.last
+recentf
