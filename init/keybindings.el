@@ -15,3 +15,8 @@
 
 ;; C-h delete-backward-char
 (global-set-key "\C-h" 'delete-backward-char)
+
+(put 'upcase-region 'disabled nil)
+
+;; Magit
+(global-set-key "\C-xg" 'magit-status)

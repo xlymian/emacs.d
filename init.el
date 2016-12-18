@@ -1,11 +1,10 @@
 (require 'cask "/usr/local/share/emacs/site-lisp/cask/cask.el")
 (cask-initialize)
+(add-to-list 'load-path "~/.emacs.d/init")
 
-(load "~/.emacs.d/init/custom")
-(load "~/.emacs.d/init/keybindings")
-(load "~/.emacs.d/init/misc_settings")
-
-(put 'upcase-region 'disabled nil)
+(load "custom")
+(load "keybindings")
+(load "misc_settings")
 
 (require 'textmate)
 (textmate-mode)
