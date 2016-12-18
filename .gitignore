@@ -1,4 +1,5 @@
 .cask/*
+*.elc
 elpa/*
 .smex-items
 places
