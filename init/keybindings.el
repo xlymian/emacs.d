@@ -20,3 +20,13 @@
 
 ;; Magit
 (global-set-key "\C-xg" 'magit-status)
+
+(global-set-key [f1] 'multi-term)
+(global-set-key (kbd "<f2>") 'tomatinho)
+
+(global-set-key (kbd "C-<return>") 'eval-expression)
+
+(global-set-key (kbd "C-c e")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.emacs.d/init.el")))

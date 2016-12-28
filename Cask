@@ -27,3 +27,6 @@
 (depends-on "yasnippet")
 
 (depends-on "textmate")
+(depends-on "tomatinho")
+(depends-on "multi-term")
+(depends-on "exec-path-from-shell")

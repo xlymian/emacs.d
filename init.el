@@ -8,3 +8,9 @@
 
 (require 'textmate)
 (textmate-mode)
+
+;; GNU Emacs library to ensure environment variables inside Emacs look the
+;; same as in the user's shell.
+;; https://github.com/purcell/exec-path-from-shell
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
