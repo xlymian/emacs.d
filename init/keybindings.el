@@ -30,3 +30,7 @@
 		(lambda ()
 		  (interactive)
 		  (find-file "~/.emacs.d/init.el")))
+
+(global-set-key "\C-xw" 'whitespace-mode)
+
+;; find-file-at-point  ffap
