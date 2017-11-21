@@ -33,4 +33,6 @@
 
 (global-set-key "\C-xw" 'whitespace-mode)
 
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
 ;; find-file-at-point  ffap

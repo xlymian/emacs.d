@@ -25,13 +25,10 @@
 (depends-on "use-package")
 (depends-on "web-mode")
 (depends-on "yasnippet")
-
 (depends-on "textmate")
 (depends-on "tomatinho")
 (depends-on "multi-term")
 (depends-on "exec-path-from-shell")
 (depends-on "powerline")
-
-;; (depends-on "cider")
-
+(depends-on "cider") ;; CIDER extends Emacs with support for interactive programming in Clojure
 (depends-on "slim-mode")

@@ -10,20 +10,6 @@
 
 (load "custom")
 (load "keybindings")
-(load "misc_settings")
-
-(require 'textmate)
-(textmate-mode)
-
-;; GNU Emacs library to ensure environment variables inside Emacs look the
-;; same as in the user's shell.
-;; https://github.com/purcell/exec-path-from-shell
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
-
-;; https://github.com/jonathanchu/emacs-powerline
-(add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
-(require 'powerline)
-(setq powerline-arrow-shape 'curve)   ;; give your mode-line curves
-
-(put 'downcase-region 'disabled nil)
+(load "misc-settings")
+(load "powerline-init")
+(load "textmate-init")
