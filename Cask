@@ -30,3 +30,8 @@
 (depends-on "tomatinho")
 (depends-on "multi-term")
 (depends-on "exec-path-from-shell")
+(depends-on "powerline")
+
+;; (depends-on "cider")
+
+(depends-on "slim-mode")
