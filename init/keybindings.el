@@ -5,7 +5,8 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 
-;; goto line
+;; Goto line
+;; In textmate-mode, use: ⌘L - Go to Line
 (global-set-key "\C-x\C-g" 'goto-line)
 
 ;; C-? instead of C-h
@@ -26,10 +27,33 @@
 
 (global-set-key (kbd "C-<return>") 'eval-expression)
 
+;;
+;; Add some shortcuts to init files
+;;
 (global-set-key (kbd "C-c e")
 		(lambda ()
 		  (interactive)
 		  (find-file "~/.emacs.d/init.el")))
+
+(global-set-key (kbd "C-c k")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.emacs.d/init/keybindings.el")))
+
+(global-set-key (kbd "C-c m")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.emacs.d/init/misc-settings.el")))
+
+(global-set-key (kbd "C-c c")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.emacs.d/init/custom.el")))
+
+(global-set-key (kbd "C-c p")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.emacs.d/init/powerline-init.el")))
 
 (global-set-key "\C-xw" 'whitespace-mode)
 
