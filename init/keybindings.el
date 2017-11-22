@@ -30,6 +30,11 @@
 ;;
 ;; Add some shortcuts to init files
 ;;
+(global-set-key (kbd "C-c c")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.emacs.d/Cask")))
+
 (global-set-key (kbd "C-c e")
 		(lambda ()
 		  (interactive)
@@ -45,7 +50,7 @@
 		  (interactive)
 		  (find-file "~/.emacs.d/init/misc-settings.el")))
 
-(global-set-key (kbd "C-c c")
+(global-set-key (kbd "C-c u")
 		(lambda ()
 		  (interactive)
 		  (find-file "~/.emacs.d/init/custom.el")))
