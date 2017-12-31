@@ -18,6 +18,7 @@
 (depends-on "pallet")
 (depends-on "popwin")
 (depends-on "prodigy")
+(depends-on "helm")
 (depends-on "projectile")
 (depends-on "s")
 (depends-on "smartparens")
@@ -32,3 +33,5 @@
 (depends-on "powerline")
 (depends-on "cider") ;; CIDER extends Emacs with support for interactive programming in Clojure
 (depends-on "slim-mode")
+(depends-on "fzf")
+(depends-on "rspec-mode")

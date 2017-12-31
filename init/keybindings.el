@@ -64,4 +64,6 @@
 
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
+(global-set-key "\C-cf" 'fzf)
+
 ;; find-file-at-point  ffap

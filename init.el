@@ -13,3 +13,8 @@
 (load "misc-settings")
 (load "powerline-init")
 (load "textmate-init")
+
+(require 'helm-config)
+(helm-mode 1)
+
+(require 'rspec-mode)
