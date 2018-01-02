@@ -35,3 +35,4 @@
 (depends-on "slim-mode")
 (depends-on "fzf")
 (depends-on "rspec-mode")
+(depends-on "rbenv")
