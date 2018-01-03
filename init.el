@@ -17,9 +17,15 @@
 (require 'helm-config)
 (helm-mode 1)
 
+(require 'yasnippet)
+(yas-global-mode 1)
+
 ;; https://github.com/senny/rbenv.el
 (require 'rbenv)
 (global-rbenv-mode)
 
 ;; https://www.emacswiki.org/emacs/RspecMode
 (require 'rspec-mode)
+
+(eval-after-load 'rspec-mode
+  '(rspec-install-snippets))

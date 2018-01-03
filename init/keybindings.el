@@ -35,7 +35,7 @@
 		  (interactive)
 		  (find-file "~/.emacs.d/Cask")))
 
-(global-set-key (kbd "C-c e")
+(global-set-key (kbd "C-c i")
 		(lambda ()
 		  (interactive)
 		  (find-file "~/.emacs.d/init.el")))
