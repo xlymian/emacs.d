@@ -1,3 +1,10 @@
+;; There is a bug in GNU Emacs 25.3
+;; See discussion here: https://github.com/cask/cask/issues/373#issuecomment-359774251
+;; Add the following to /usr/local/Cellar/cask/0.8.1_1/cask-cli.el
+;;
+;;   (require 'gnutls)
+;;   (add-to-list 'gnutls-trustfiles "/private/etc/ssl/cert.pem")
+
 (source gnu)
 (source melpa)
 
@@ -27,7 +34,6 @@
 (depends-on "web-mode")
 (depends-on "yasnippet")
 (depends-on "textmate")
-(depends-on "tomatinho")
 (depends-on "multi-term")
 (depends-on "exec-path-from-shell")
 (depends-on "powerline")

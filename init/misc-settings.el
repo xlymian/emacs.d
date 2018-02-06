@@ -4,7 +4,7 @@
 ;; (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 
 ;; Start fullscreen (cross-platf)
-(add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
+;; (add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
 
 ;; https://www.masteringemacs.org/article/beginners-guide-to-emacs
 

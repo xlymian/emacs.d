@@ -23,7 +23,6 @@
 (global-set-key "\C-xg" 'magit-status)
 
 (global-set-key [f1] 'multi-term)
-(global-set-key (kbd "<f2>") 'tomatinho)
 
 (global-set-key (kbd "C-<return>") 'eval-expression)
 
