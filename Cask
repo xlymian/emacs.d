@@ -42,3 +42,6 @@
 (depends-on "fzf")
 (depends-on "rspec-mode")
 (depends-on "rbenv")
+(depends-on "coffee-mode")
+(depends-on "markdown-mode")
+(depends-on "go-mode")

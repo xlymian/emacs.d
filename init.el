@@ -31,3 +31,17 @@
   '(rspec-install-snippets))
 
 (setq latex-run-command "pdflatex")
+
+(require 'markdown-mode)
+
+(require 'go-mode)
+;; (require 'go-mode-autoloads)
+
+
+(setq-default indent-tabs-mode nil)
+
+(add-hook 'go-mode-hook
+          (lambda ()
+            ;; (add-hook 'before-save-hook 'gofmt-before-save)
+            (setq tab-width 2)
+            (setq indent-tabs-mode nil)))
