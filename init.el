@@ -37,7 +37,6 @@
 (require 'go-mode)
 ;; (require 'go-mode-autoloads)
 
-
 (setq-default indent-tabs-mode nil)
 
 (add-hook 'go-mode-hook
@@ -45,3 +44,4 @@
             ;; (add-hook 'before-save-hook 'gofmt-before-save)
             (setq tab-width 2)
             (setq indent-tabs-mode nil)))
+(setq tab-width 2)
